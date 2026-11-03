@@ -15,7 +15,7 @@ const falha = (m) => {
 }
 const git = (...a) => execFileSync('git', a, { encoding: 'utf8', maxBuffer: 1 << 28 })
 
-const chain = ler(readFileSync('chain.jsonl', 'utf8'))
+const chain = existsSync('chain.jsonl') ? ler(readFileSync('chain.jsonl', 'utf8')) : []
 const chave = existsSync('key.txt') ? Buffer.from(readFileSync('key.txt', 'utf8').trim(), 'hex') : null
 if (chave && sha(chave) !== readFileSync('key.sha256', 'utf8').trim()) falha('key.txt does not match key.sha256')
 
