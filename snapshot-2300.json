@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-11-04T04:00:08.502Z",
+  "counted_pct": 57.9,
+  "house": {
+    "median": 264.2,
+    "lo95": 258,
+    "hi95": 270
+  },
+  "senate": {
+    "median": 46.9,
+    "lo95": 35,
+    "hi95": 61
+  },
+  "sha256": "2b87359fc9dd028c5fa88b312fe5e01e7232aa28144abfc0acfdd107337988e4",
+  "portrait": "/snapshot-2300/2b87359fc9dd028c5fa88b312fe5e01e7232aa28144abfc0acfdd107337988e4.json"
+}
